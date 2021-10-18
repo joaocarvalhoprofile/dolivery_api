@@ -7,6 +7,8 @@ defmodule DoliveryApiWeb.Router do
 
   scope "/api", DoliveryApiWeb do
     pipe_through :api
+
+    get "/", WelcomeController, :index
   end
 
   # Enables LiveDashboard only for development
