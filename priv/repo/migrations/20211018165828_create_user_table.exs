@@ -16,4 +16,5 @@ defmodule DoliveryApi.Repo.Migrations.CreateUserTable do
 
     create unique_index(:user, [:cpf])
     create unique_index(:user, [:email])
+  end
 end

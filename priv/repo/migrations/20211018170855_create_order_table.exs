@@ -9,5 +9,6 @@ defmodule DoliveryApi.Repo.Migrations.CreateOrderTable do
       add :payment_method, :payment_method
 
       timestamps()
+    end
   end
 end

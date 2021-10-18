@@ -9,5 +9,6 @@ defmodule DoliveryApi.Repo.Migrations.CreateProductTable do
       add :photo, :string
 
       timestamps()
+    end
   end
 end
