@@ -1,4 +1,4 @@
-defmodule DoliveryApi.Core.Exception.Error do
+defmodule Core.Exception.Error do
   @keys [:status, :result]
 
   @enforce_keys @keys

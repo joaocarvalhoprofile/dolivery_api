@@ -1,4 +1,5 @@
 defmodule DoliveryApi.Domain.Users.Create do
+  alias Core.Exception.Error
   alias DoliveryApi.Domain.Users.User
   alias DoliveryApi.Repo
 
@@ -11,5 +12,7 @@ defmodule DoliveryApi.Domain.Users.Create do
 
   defp handle_insert({:ok, %User{}} = result), do: result
 
-  defp handle_insert({:error, result}), do: result
+  defp handle_insert({:error, result}) do
+    {:error, Error.build(:bad_request, result)}
+  end
 end
