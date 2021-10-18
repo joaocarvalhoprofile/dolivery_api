@@ -1,9 +1,6 @@
 defmodule DoliveryApi do
-  @moduledoc """
-  DoliveryApi keeps the contexts that define your domain
-  and business logic.
+  alias DoliveryApi.Domain.Users.Create, as: UserCreate
 
-  Contexts are also responsible for managing your data, regardless
-  if it comes from the database, an external API or others.
-  """
+  # User
+  defdelegate create_user(params), to: UserCreate, as: :call
 end
