@@ -10,6 +10,10 @@ import Config
 config :dolivery_api,
   ecto_repos: [DoliveryApi.Repo]
 
+config :dolivery_api, DoliveryApi.Repo,
+  migration_primary_key: [type: :binary_id],
+  migration_foreign_key: [type: :binary_id]
+
 # Configures the endpoint
 config :dolivery_api, DoliveryApiWeb.Endpoint,
   url: [host: "localhost"],
