@@ -1,4 +1,4 @@
-defmodule DoliveryApi.Users.User do
+defmodule DoliveryApi.Domain.Users.User do
   use Ecto.Schema
   import Ecto.Changeset
 

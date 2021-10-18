@@ -1,4 +1,4 @@
-defmodule DoliveryApiWeb.WebcomeController do
+defmodule DoliveryApiWeb.WelcomeController do
   use DoliveryApiWeb, :controller
 
   def index(conn, _params) do
